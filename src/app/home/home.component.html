@@ -1,0 +1,71 @@
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+  <h1 class="display-4 fw-normal">Our Tech </h1>
+  <p class="fs-5 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non excepturi optio quo molestias ratione repellat unde necessitatibus soluta reprehenderit iste quidem voluptatum sed pariatur tempora vitae sit ducimus hic error, quod expedita? Harum quo quas alias fuga cupiditate culpa doloribus ratione rerum ab?</p>
+</div>
+
+<main>
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+  <div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm">
+      <div class="card-header py-3">
+        <h4 class="my-0 fw-normal">Future in gadgets</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">Gadgets<small class="text-muted fw-light"> all</small></h1>
+        <img [src]="pic2">
+       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste atque rerum sequi reprehenderit? Nemo facere in eos veritatis! Fuga, aspernatur.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm">
+      <div class="card-header py-3">
+        <h4 class="my-0 fw-normal">Tech tree</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">Sample<small class="text-muted fw-light"> tree</small></h1>
+        <img [src]="pic3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eaque debitis accusamus id unde voluptate, et voluptatem nostrum consequatur laboriosam!</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+      <div class="card-header py-3 text-white bg-primary border-primary">
+        <h4 class="my-0 fw-normal">Deveopers</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">Full stack web<small class="text-muted fw-light"> Deveopment</small></h1>
+        <img [src]="pic1">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt eos laborum ipsam explicabo facilis voluptatibus enim modi quae at nobis!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 class="display-6 text-center mb-4">Candidtaes that need to take a test</h2>
+
+<h2>Candidates List</h2>
+
+<table class="table table-hover table-striped">
+    <thead>
+        <tr>
+            <th>No:</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Post Applied</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let candi of candidateList; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{candi.id}}</td>
+            <td>{{candi.name}}</td>
+            <td>{{candi.email}}</td>
+            <td>{{candi.post}}</td>
+        </tr>
+    </tbody>
+    <a routerLink='/new-candidate' class="btn btn-secondary">Add a candidate</a>
+</table>
+</main>

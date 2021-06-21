@@ -1,0 +1,22 @@
+{
+  "candidates": [
+    {
+      "id": 20211,
+      "name": "Example",
+      "email": "example@yahoo.com",
+      "post": "Full stack web development"
+    },
+    {
+      "id": 20212,
+      "name": "Nkululeko Mokwena",
+      "email": "nkululekoena@gmail.com",
+      "post": "Full stack Web development"
+    },
+    {
+      "id": 20213,
+      "name": "Clearance Morumudi",
+      "email": "clearancemorumudi@outlook.com",
+      "post": "Full Stack web development"
+    }
+  ]
+}

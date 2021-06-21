@@ -1,0 +1,28 @@
+<div class="collapse" id="navbarToggleExternalContent">
+  <div class="bg-dark p-4">
+    <h5 class="text-white h4">Collapsed content</h5>
+    <span class="text-muted">Toggleable via the navbar brand.</span>
+  </div>
+</div>
+<nav class="navbar navbar-dark bg-warning">
+  <div class="container-fluid">
+    <a routerLink='login-form'><button class="navbar-toggler btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>Evaluation Test
+    </button></a>
+    <div class="container">
+      <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a routerLink='home' class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a routerLink='service' class="nav-link">Service</a></li>
+          <li class="nav-item"><a routerLink='contact' class="nav-link">Contact</a></li>
+          <li class="nav-item"><a routerLink='candidates' class="nav-link">Candidate</a></li>
+          <li class="nav-item"><a routerLink='about' class="nav-link">About</a></li>
+        </ul>
+      </header>
+    </div>
+
+  </div>
+</nav>
+
+
+<router-outlet></router-outlet>
